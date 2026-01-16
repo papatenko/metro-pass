@@ -1,11 +1,11 @@
 import Router from "./router";
 
-function App() {
+const App: React.FC = () => {
   return (
     <>
       <Router />
     </>
   );
-}
+};
 
 export default App;

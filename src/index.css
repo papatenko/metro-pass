@@ -1,7 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+  --font-Helvetica: "Helvetica", sans-serif;
+}
+
 @plugin "daisyui" {
   themes: light --default;
 }
+
 @plugin "daisyui/theme" {
   name: "light";
   default: true;
@@ -17,27 +23,20 @@
   --color-accent: #005da8;
 }
 
+@font-face {
+  font-family: "Helvetica";
+  src: url("../static/fonts/helveticanowtext-bold-demo.ttf") format("truetype");
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  background-color: #00496a;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
