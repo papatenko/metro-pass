@@ -9,4 +9,4 @@ COPY . .
 FROM build 
 RUN npm run build
 EXPOSE 4001
-CMD ["npx", "serve", "-s", "build", "-l", "4001"]
+CMD ["npm", "run", "preview"]

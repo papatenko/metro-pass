@@ -7,8 +7,8 @@ import type { AutoScrollOptionsType } from "embla-carousel-auto-scroll";
 
 import React, { useMemo } from "react";
 
-const LOGO_SRC = "/src/assets/logo.png";
-const SHOW_CODE_SRC = "/src/assets/show-code.png";
+const LOGO_URL = "/img/logo.png";
+const SHOW_CODE_URL = "/img/show-code.png";
 
 const Label: React.FC = () => {
   // Get selected ticket from localStorage and parse as string
@@ -43,7 +43,7 @@ const Label: React.FC = () => {
       <div className="embla" ref={emblaRef}>
         <div className="embla__container flex gap-12 px-12">
           {[...Array(4)].map((_, idx) => (
-            <img key={idx} src={LOGO_SRC} alt="Logo" className="embla__slide" />
+            <img key={idx} src={LOGO_URL} alt="Logo" className="embla__slide" />
           ))}
         </div>
       </div>
@@ -53,7 +53,7 @@ const Label: React.FC = () => {
         </div>
       )}
       <img
-        src={SHOW_CODE_SRC}
+        src={SHOW_CODE_URL}
         alt="Show Code"
         className="absolute bottom-0 right-0 h-14"
       />

@@ -4,8 +4,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import AutoScroll from "embla-carousel-auto-scroll";
 import type { AutoScrollOptionsType } from "embla-carousel-auto-scroll";
 
-const METRO_1 = "/src/assets/metro-1.png";
-const METRO_2 = "/src/assets/metro-2.png";
+const METRO_1_URL = "/img/metro-1.png";
+const METRO_2_URL = "/img/metro-2.png";
 
 const Header: React.FC = () => {
   const emblaOptions: EmblaOptionsType = {
@@ -27,10 +27,10 @@ const Header: React.FC = () => {
     <div className="relative text-white text-5xl text-center font-Helvetica font-bold w-screen">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container flex">
-          <img src={METRO_2} alt="Metro" className="embla__slid h-36" />
-          <img src={METRO_1} alt="Metro" className="embla__slid h-36" />
-          <img src={METRO_2} alt="Metro" className="embla__slid h-36" />
-          <img src={METRO_1} alt="Metro" className="embla__slid h-36" />
+          <img src={METRO_2_URL} alt="Metro" className="embla__slid h-36" />
+          <img src={METRO_1_URL} alt="Metro" className="embla__slid h-36" />
+          <img src={METRO_2_URL} alt="Metro" className="embla__slid h-36" />
+          <img src={METRO_1_URL} alt="Metro" className="embla__slid h-36" />
         </div>
       </div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-screen">
