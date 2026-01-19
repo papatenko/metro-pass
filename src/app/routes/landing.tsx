@@ -31,7 +31,10 @@ const Landing: React.FC = () => {
           <div className="flex-1">
             <a className="btn btn-ghost text-xl">Metro-Pass</a>
           </div>
-          <div className="flex-none">
+          <div
+            className="tooltip tooltip-left tooltip-info"
+            data-tip="To make website full screen."
+          >
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details>
@@ -82,8 +85,9 @@ const Landing: React.FC = () => {
         <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
           <aside>
             <span className="badge badge-lg">
-              Best viewed on mobile browsers.
+              Best viewed on Mobile Browsers
             </span>
+            <span className="badge badge-lg">+ Full Screened</span>
             <a
               href={GITHUB_HREF}
               target="_blank"
