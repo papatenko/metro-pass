@@ -9,7 +9,7 @@ const GITHUB_HREF = "https://github.com/papatenko/metro-pass";
 const IOS_GUIDE_HREF =
   "https://discussions.apple.com/thread/255899735?sortBy=rank";
 const ANDROID_GUIDE_HREF =
-  "https://www.androidauthority.com/add-website-android-iphone-home-screen-3181682/";
+  "https://www.howtogeek.com/how-to-turn-any-website-into-an-android-app-and-why-you-should/";
 
 const Landing: React.FC = () => {
   const [selectedTicket, setSelectedTicket] = React.useState("");
@@ -31,14 +31,11 @@ const Landing: React.FC = () => {
           <div className="flex-1">
             <a className="btn btn-ghost text-xl">Metro-Pass</a>
           </div>
-          <div
-            className="tooltip tooltip-left tooltip-info"
-            data-tip="To make website full screen."
-          >
+          <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li>
                 <details>
-                  <summary>Add to Home Screen</summary>
+                  <summary>Guide to Full Screen</summary>
                   <ul className="bg-base-100 rounded-t-none p-2">
                     <li>
                       <a href={IOS_GUIDE_HREF}>IOS Guide</a>
